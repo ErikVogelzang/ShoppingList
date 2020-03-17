@@ -27,10 +27,10 @@ class ShoppingListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_shopping_list)
         supportActionBar?.title = getString(R.string.app_name)
         productRepository = ProductRepository(this)
-        initViewa()
+        initViews()
     }
 
-    private fun initViewa() {
+    private fun initViews() {
         rvItems.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
         rvItems.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
